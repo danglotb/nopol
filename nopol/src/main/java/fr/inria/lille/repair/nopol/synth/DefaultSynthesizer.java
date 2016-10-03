@@ -15,11 +15,11 @@
  */
 package fr.inria.lille.repair.nopol.synth;
 
-import com.gzoltar.core.instr.testing.TestResult;
 import fr.inria.lille.commons.spoon.SpoonedProject;
 import fr.inria.lille.commons.synthesis.CodeGenesis;
 import fr.inria.lille.commons.synthesis.ConstraintBasedSynthesis;
 import fr.inria.lille.commons.trace.Specification;
+import fr.inria.lille.localization.TestResult;
 import fr.inria.lille.repair.common.config.Config;
 import fr.inria.lille.repair.common.patch.Patch;
 import fr.inria.lille.repair.common.patch.StringPatch;
@@ -97,7 +97,7 @@ public final class DefaultSynthesizer<T> implements Synthesizer {
 		intConstants.put("-1", -1);
 		intConstants.put("0", 0);
 		intConstants.put("1", 1);
-		/*for (int i = 0; i < constantes.size(); i++) {
+		/*for (int i = 0; i < constantes.size(); i++) {//TODO OLD UNUSED CODE
 			Expression expression = constantes.get(i);
 			if(expression instanceof PrimitiveConstant) {
 				if(expression.getType() == Integer.class) {

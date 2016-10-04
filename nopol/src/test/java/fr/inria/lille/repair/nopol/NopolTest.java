@@ -87,7 +87,9 @@ public class NopolTest extends TestUtility {
 				"((a)!=((1)+(1)))&&(intermediaire == 0)",
 				"(intermediaire == 0) && (!(a + -1 <= (intermediaire) - (-1)))",
 				"(-1 + 1 == intermediaire) && (1 < a - 1)",
-				"(-1 + 1 == intermediaire) && (1 < (a) - (1))");
+				"(-1 + 1 == intermediaire) && (1 < (a) - (1))",
+				"((intermediaire) - (a) + 1 < -1) && (intermediaire == 0)",
+				"!((-1 <= (1) - (a + intermediaire)) || ((0) != (intermediaire)))");
 	}
 
 	@Test
